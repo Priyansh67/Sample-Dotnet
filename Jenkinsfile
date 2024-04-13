@@ -22,7 +22,7 @@ pipeline {
 
         stage('Test') {
             steps {
-                sh 'dotnet test src/SampleDotnet/SampleDotnet.sln --logger "trx;LogFileName=./SampleDotnet.trx"'
+                sh 'dotnet test src/SampleDotnet.sln --logger "trx;LogFileName=./SampleDotnet.trx"'
             }
         }
 
